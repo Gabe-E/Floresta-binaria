@@ -88,8 +88,8 @@ public class Main {
                     int choose;
                     do{
                         System.out.println("=====Insira====");
-                        System.out.println("(1)Para Remover por Meio do Código do Produto");
-                        System.out.println("(2)Para Remover por Meio do Nome do Produto");
+                        System.out.println("1.Para Remover por Meio do Código do Produto");
+                        System.out.println("2.Para Remover por Meio do Nome do Produto");
                         choose = scanner.nextInt();
                     }while (0>choose||choose>2);
                     scanner.nextLine();
@@ -126,8 +126,8 @@ public class Main {
                     int chooseUp;
                     do{
                         System.out.println("=====Insira====");
-                        System.out.println("(1)Para Atualizar Quantidade em Estoque  por Meio do Código do Produto");
-                        System.out.println("(2)Para Atualizar Quantidade em Estoque  por Meio do Nome do Produto");
+                        System.out.println("1.Para Atualizar Quantidade em Estoque  por Meio do Código do Produto");
+                        System.out.println("2.Para Atualizar Quantidade em Estoque  por Meio do Nome do Produto");
                         chooseUp = scanner.nextInt();
                     }while (0>chooseUp||chooseUp>2);
                     scanner.nextLine();
