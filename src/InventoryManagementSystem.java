@@ -1,5 +1,5 @@
 //A classe InventoryManagementSystem é responsável por gerenciar o estoque de produtos.
-// Ela utiliza uma estrutura de árvore binária de busca do tipo ProductTree para armazenar os produtos de forma organizada.
+// Ela utiliza uma estrutura de árvore binária de busca do tipo ProductTree e o SearchtreeByName para armazenar os produtos de forma organizada.
 // A classe possui métodos para adicionar um produto ao estoque, remover um produto, atualizar a quantidade de um produto e exibir o estoque atual.
 // Esses métodos interagem com a árvore de produtos e realizam as operações correspondentes.
 // A classe também utiliza a classe Utils para exibir as informações dos produtos de forma legível.

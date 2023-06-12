@@ -23,9 +23,14 @@ public class ProductTree {
         if (root == null) {
             return new TreeNode(product);
         }
+        // Verifica se o código do produto é menor que o código do produto na raiz.
+        // Se sim, chama recursivamente a função para adicionar o produto na subárvore esquerda.
 
         if (product.getCode() < root.getProduct().getCode()) {
             root.setLeft(addProductRec(root.getLeft(), product));
+            // Caso contrário, se o código do produto é maior que o código do produto na raiz,
+            // chama recursivamente a função para adicionar o produto na subárvore direita.
+
         } else if (product.getCode() > root.getProduct().getCode()) {
             root.setRight(addProductRec(root.getRight(), product));
         }
@@ -43,11 +48,16 @@ public class ProductTree {
         }
 
         if (code < root.getProduct().getCode()) {
+            // Chama recursivamente a função para remover o produto na subárvore esquerda.
+
             root.setLeft(removeProductRec(root.getLeft(), code));
         } else if (code > root.getProduct().getCode()) {
+            // Chama recursivamente a função para remover o produto na subárvore direita.
+
             root.setRight(removeProductRec(root.getRight(), code));
         } else {
             if (root.getLeft() == null) {
+
                 return root.getRight();
             } else if (root.getRight() == null) {
                 return root.getLeft();
